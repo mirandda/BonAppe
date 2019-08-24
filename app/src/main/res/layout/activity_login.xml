@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <Button
+        android:textColor="@android:color/white"
+        app:backgroundTint="@color/apporange"
+
+        android:id="@+id/btnLogin"
+        android:layout_width="208dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="16dp"
+        android:text="LogIn"
+        app:layout_constraintEnd_toEndOf="@+id/et_Fjalekalimi"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/et_Fjalekalimi"
+        app:layout_constraintTop_toBottomOf="@+id/et_Fjalekalimi" />
+
+    <Button
+        android:id="@+id/btnRegjistrohu"
+        android:layout_width="208dp"
+
+        android:layout_height="45dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="8dp"
+        android:text="Regjistrohu"
+        android:textColor="@android:color/white"
+        app:backgroundTint="@color/apporange"
+        app:layout_constraintEnd_toEndOf="@+id/textView"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/btnLogin" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/appicon_trans"
+        tools:srcCompat="@drawable/appicon_trans" />
+
+    <EditText
+        android:id="@+id/et_Email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:hint="@string/s_email"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="27dp"
+        android:layout_marginTop="16dp"
+        android:text="Nuk keni llogari?"
+        app:layout_constraintStart_toStartOf="@+id/btnLogin"
+        app:layout_constraintTop_toBottomOf="@+id/btnLogin" />
+
+    <EditText
+        android:id="@+id/et_Fjalekalimi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="Fjalekalimi"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="@+id/et_Email"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/et_Email"
+        app:layout_constraintTop_toBottomOf="@+id/et_Email" />
+
+    <TextView
+        android:id="@+id/tvForgotPassword"
+        android:layout_width="186dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="52dp"
+        android:text="Forgot Password?"
+        android:textSize="17sp"
+        app:layout_constraintEnd_toEndOf="@+id/btnRegjistrohu"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/btnRegjistrohu"
+        app:layout_constraintTop_toBottomOf="@+id/btnRegjistrohu" />
+</android.support.constraint.ConstraintLayout>

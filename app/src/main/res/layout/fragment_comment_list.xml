@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <ListView
+        android:id="@+id/lista_komentet"
+        android:layout_width="match_parent"
+        android:layout_height="314dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText4" />
+
+    <EditText
+        android:id="@+id/editText4"
+        android:layout_width="272dp"
+        android:layout_height="47dp"
+        android:ems="10"
+        android:hint="@string/komenti"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:textColor="@android:color/white"
+        app:backgroundTint="@color/apporange"
+
+        android:id="@+id/button2"
+        android:layout_width="63dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="8dp"
+        android:text="Send"
+        app:layout_constraintStart_toEndOf="@+id/editText4"
+        app:layout_constraintTop_toTopOf="@+id/editText4" />
+</android.support.constraint.ConstraintLayout>

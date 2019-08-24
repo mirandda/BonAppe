@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".RegisterActivity">
+
+    <ScrollView
+        android:id="@+id/scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="209dp"
+                android:layout_height="239dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="8dp"
+                android:clickable="true"
+                android:src="@drawable/profile_pic"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <EditText
+                android:id="@+id/et_Emri"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="36dp"
+                android:ems="10"
+                android:hint="@string/s_emri"
+                android:inputType="textPersonName"
+                app:layout_constraintEnd_toEndOf="@+id/imageView"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/imageView"
+                app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+            <EditText
+                android:id="@+id/et_Mbiemri"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="28dp"
+                android:ems="10"
+                android:hint="@string/s_mbiemri"
+                android:inputType="textPersonName"
+                app:layout_constraintEnd_toEndOf="@+id/et_Emri"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/et_Emri"
+                app:layout_constraintTop_toBottomOf="@+id/et_Emri" />
+
+            <EditText
+                android:id="@+id/et_Fjalekalimi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="28dp"
+                android:ems="10"
+                android:hint="@string/s_password"
+                android:inputType="textPassword"
+                app:layout_constraintEnd_toEndOf="@+id/et_Email"
+                app:layout_constraintStart_toStartOf="@+id/et_Email"
+                app:layout_constraintTop_toBottomOf="@+id/et_Email" />
+
+            <EditText
+                android:id="@+id/et_KonfirmoFjalekalimin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="28dp"
+                android:ems="10"
+                android:hint="@string/s_konfirmo_password"
+                android:inputType="textPassword"
+                app:layout_constraintEnd_toEndOf="@+id/et_Fjalekalimi"
+                app:layout_constraintStart_toStartOf="@+id/et_Fjalekalimi"
+                app:layout_constraintTop_toBottomOf="@+id/et_Fjalekalimi" />
+
+            <EditText
+                android:id="@+id/et_Telefoni"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="28dp"
+                android:ems="10"
+                android:hint="@string/s_telefoni"
+                android:inputType="phone"
+                app:layout_constraintEnd_toEndOf="@+id/et_Mbiemri"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/et_Mbiemri"
+                app:layout_constraintTop_toBottomOf="@+id/et_Mbiemri" />
+
+            <EditText
+                android:id="@+id/et_Email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="28dp"
+                android:ems="10"
+                android:hint="@string/s_email"
+                android:inputType="textEmailAddress"
+                app:layout_constraintEnd_toEndOf="@+id/et_Telefoni"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/et_Telefoni"
+                app:layout_constraintTop_toBottomOf="@+id/et_Telefoni" />
+
+
+            <Button
+                android:id="@+id/btn_Regjistrohu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="40dp"
+                android:text="@string/s_regjistrohu"
+                app:layout_constraintEnd_toEndOf="@+id/et_KonfirmoFjalekalimin"
+                app:layout_constraintHorizontal_bias="0.427"
+                app:layout_constraintStart_toStartOf="@+id/et_KonfirmoFjalekalimin"
+                app:layout_constraintTop_toBottomOf="@+id/et_KonfirmoFjalekalimin" />
+
+
+        </android.support.constraint.ConstraintLayout>
+    </ScrollView>
+</RelativeLayout>

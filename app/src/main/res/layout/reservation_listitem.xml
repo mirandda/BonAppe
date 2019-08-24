@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/iv_reserv"
+        android:layout_width="90dp"
+        android:layout_height="99dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/reservation"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/reserv_1"
+        android:layout_width="245dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="16dp"
+        android:text="Emri Restaurantit"
+        android:textSize="17sp"
+        app:layout_constraintStart_toEndOf="@+id/iv_reserv"
+        app:layout_constraintTop_toTopOf="@+id/iv_reserv" />
+
+    <TextView
+        android:id="@+id/tv_data"
+        android:layout_width="wrap_content"
+        android:layout_height="23dp"
+        android:layout_marginTop="10dp"
+        android:text="Data"
+        app:layout_constraintStart_toStartOf="@+id/reserv_1"
+        app:layout_constraintTop_toBottomOf="@+id/reserv_1" />
+
+    <TextView
+        android:id="@+id/tv_ora"
+        android:layout_width="118dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:text="Ora"
+        app:layout_constraintStart_toEndOf="@+id/tv_data"
+        app:layout_constraintTop_toTopOf="@+id/tv_data" />
+
+    <TextView
+        android:id="@+id/tv_lloji"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Lloji i rezervimit"
+        android:textSize="17sp"
+        app:layout_constraintStart_toStartOf="@+id/tv_data"
+        app:layout_constraintTop_toBottomOf="@+id/tv_data" />
+
+</android.support.constraint.ConstraintLayout>

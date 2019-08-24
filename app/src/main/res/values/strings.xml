@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">BonAppe</string>
+    <string name="s_email">Email</string>
+    <string name="s_password">Fjalkalimi</string>
+    <string name="s_krijo">Krijo Llogari</string>
+    <string name="s_konfirmo_password">Konfirmo Fjalkalimin</string>
+    <string name="s_telefoni">Telefoni</string>
+    <string name="s_mbiemri">Mbiemri</string>
+    <string name="s_emri">Emri</string>
+    <string name="s_regjistrohu">Regjistrohu</string>
+    <string name="btn1s">Frag1</string>
+    <string name="btn2s">Frag2</string>
+    <string name="btn3s">Frag3</string>
+    <string name="btnLogin">Login</string>
+    <string name="btnRegjistrohu">Regjistrohu</string>
+    <string name="title_activity_restaurant">RestaurantActivity</string>
+    <string name="tab_text_kerko">Kerko</string>
+    <string name="tab_text_profili">Profili</string>
+    <string name="title_activity_main2">BonAppe1</string>
+    <string name="f_search_kerko">Kerko</string>
+    <string name="forgot_password_msg">Resetimi i Emailit</string>
+    <string name="hint_email">Shenoni emailin</string>
+    <string name="btn_reset_password">Dergo emailin</string>
+    <string name="btn_back">Prapa</string>
+    <string name="tab_text_info">Info</string>
+    <string name="tab_text_menu">Menu</string>
+    <string name="tab_text_komente">Komente</string>
+    <string name="emri_rest">Emri i restaurantit</string>
+    <string name="lokacioni">Lokacioni</string>
+<string name="sapersona">Numri i personave</string>
+    <string name="data">Data</string>
+    <string name="ora">Ora</string>
+    <string name="komenti">Komenti</string>
+<string name ="rasti">Rasti i rezervimit</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
