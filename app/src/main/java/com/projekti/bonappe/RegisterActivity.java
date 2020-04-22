@@ -14,10 +14,14 @@ import android.text.TextUtils;
 import android.util.Log;
 import android.view.View;
 import android.webkit.MimeTypeMap;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.ProgressBar;
+import android.widget.Spinner;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.gms.tasks.Continuation;
@@ -39,10 +43,14 @@ import com.squareup.picasso.Picasso;
 
 import java.io.IOException;
 
-public class RegisterActivity extends AppCompatActivity  implements View.OnClickListener{
+
+
+public class RegisterActivity extends AppCompatActivity  implements  AdapterView.OnItemSelectedListener,View.OnClickListener {
 
   private static final int PICK_IMAGE_REQUEST=234;
  private EditText et_Emri,et_Mbiemri,et_Fjalekalimi,et_KonfirmoFjalekalimin,et_Telefoni,et_Email;
+ private String selPreference1;
+ private Spinner pref1;
  private Button btn_Regjistrohu,btnUpload,btnChoose;
  private static ImageView imageView;
  private Uri imageUri;
@@ -79,6 +87,18 @@ public class RegisterActivity extends AppCompatActivity  implements View.OnClick
         btn_Regjistrohu.setOnClickListener(this);
         imageView=(ImageView)findViewById(R.id.imageView);
         loadingBar=new ProgressDialog(this);
+        pref1=(Spinner)findViewById(R.id.spinner_pref1);
+
+
+
+
+
+        String favoriteFood []={"Pizza","Soup","Pancakes","Chinese"};
+        ArrayAdapter<String>adapter=new ArrayAdapter<>(this,android.R.layout.simple_spinner_item,favoriteFood);
+        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        pref1.setAdapter(adapter);
+        pref1.setOnItemSelectedListener(this);
+
 
          firebaseDatabase=FirebaseDatabase.getInstance();
         DatabaseRef=FirebaseDatabase.getInstance().getReference();
@@ -97,6 +117,38 @@ public class RegisterActivity extends AppCompatActivity  implements View.OnClick
                 }
             });
         }
+
+    @Override
+    public void onItemSelected(AdapterView<?> parent, View v, int position, long id) {
+
+//        switch (position) {
+//            case 0:
+//                // Whatever you want to happen when the first item gets selected
+////
+////               tv_UserPreferencesId2.setText("Pizza Margarita     3.50$");
+////                tv_UserPreferencesId3.setText("Meat Pizza          3.50$");
+//
+//                break;
+//            case 1:
+//                // Whatever you want to happen when the second item gets selected
+//                break;
+//            case 2:
+//                // Whatever you want to happen when the thrid item gets selected
+//                break;
+//            case 3:
+//                //dfdf
+//                break;
+//
+//        }
+       selPreference1=parent.getItemAtPosition(position).toString();
+
+
+
+    }
+    @Override
+    public void onNothingSelected(AdapterView<?> parent) {
+        // TODO Auto-generated method stub
+    }
 
 
 
@@ -302,11 +354,14 @@ Log.d("blu4","filechoose");
                         DatabaseRef.child("emri").setValue(et_Emri.getText().toString());
                         DatabaseRef.child("mbiemri").setValue(et_Mbiemri.getText().toString());
                         DatabaseRef.child("telefoni").setValue(et_Telefoni.getText().toString());
-
                         DatabaseRef.child("image").setValue(imageUrl);
+                        DatabaseRef.child("selPreference1").setValue(selPreference1);
+
 
                         Toast.makeText(RegisterActivity.this, "Jeni regjistruar me sukses.Ju lutem shikoni emailin per verifikim", Toast.LENGTH_LONG).show();
                         startActivity(new Intent(RegisterActivity.this, MainActivity.class));
+                        //Intent i =new Intent(RegisterActivity.this,MainActivity.class);
+
                         et_Emri.setText("");
                         et_Email.setText("");
                         et_Fjalekalimi.setText("");

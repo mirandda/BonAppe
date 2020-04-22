@@ -21,6 +21,96 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical" >
+
+            <TextView
+                android:text="User Preferences"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textPreference2"
+                android:textSize="30sp"
+                android:textStyle="normal|bold"
+                android:textAlignment="center"
+                android:fontFamily="cursive"
+                android:textColor="@color/common_google_signin_btn_text_dark_focused" />
+
+            <TextView
+                android:id="@+id/tv_UserPreferencesId1"
+                android:layout_width="361dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="meal1"
+                android:textAlignment="viewStart"
+                android:textSize="28sp"
+                android:textStyle="normal|bold"
+                />
+
+            <TextView
+                android:id="@+id/tv_UserPreferencesId2"
+                android:layout_width="361dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="meal2"
+                android:textAlignment="viewStart"
+                android:textSize="28sp"
+                android:textStyle="normal|bold"
+                />
+
+            <TextView
+                android:id="@+id/tv_UserPreferencesId3"
+                android:layout_width="361dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="meal3"
+                android:textAlignment="viewStart"
+                android:textSize="28sp"
+                android:textStyle="normal|bold"
+                />
+
+            <TextView
+                android:text="Preferences"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textPreferneces1"
+                android:textSize="30sp"
+                android:textStyle="normal|bold"
+                android:textAlignment="center"
+                android:fontFamily="cursive"
+                android:textColor="@color/common_google_signin_btn_text_dark_focused" />
+
+            <TextView
+                android:id="@+id/tvPreferencesId1"
+                android:layout_width="361dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="meal1"
+                android:textAlignment="viewStart"
+                android:textSize="28sp"
+                android:textStyle="normal|bold"
+                />
+
+            <TextView
+                android:id="@+id/tvPreferencesId2"
+                android:layout_width="361dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="meal2"
+                android:textAlignment="viewStart"
+                android:textSize="28sp"
+                android:textStyle="normal|bold"
+                />
+
+            <TextView
+                android:id="@+id/tvPreferencesId3"
+                android:layout_width="361dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="meal3"
+                android:textAlignment="viewStart"
+                android:textSize="28sp"
+                android:textStyle="normal|bold"
+                />
+
+
             <TextView
                 android:text="Appetizers"
                 android:layout_width="match_parent"

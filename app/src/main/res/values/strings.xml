@@ -27,11 +27,11 @@
     <string name="tab_text_komente">Komente</string>
     <string name="emri_rest">Emri i restaurantit</string>
     <string name="lokacioni">Lokacioni</string>
-<string name="sapersona">Numri i personave</string>
+    <string name="sapersona">Numri i personave</string>
     <string name="data">Data</string>
     <string name="ora">Ora</string>
     <string name="komenti">Komenti</string>
-<string name ="rasti">Rasti i rezervimit</string>
+    <string name="rasti">Rasti i rezervimit</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

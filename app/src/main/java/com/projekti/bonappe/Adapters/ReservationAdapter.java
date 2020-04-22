@@ -51,7 +51,7 @@ public class ReservationAdapter extends BaseAdapter {
         }
         if(position%2==0)
         {
-            holder.nrPersonave.setText(items.get(position).getLloji();
+            holder.nrPersonave.setText(items.get(position).getLloji());
         }
         holder.ora.setText("Ora: "+items.get(position).getOra());
         holder.data.setText("Data: "+items.get(position).getData());

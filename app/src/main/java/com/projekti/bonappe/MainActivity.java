@@ -143,7 +143,7 @@ UserInformation.email=c_user.getEmail();
 
 
                                 // Log.d("blu3",c_user.getPhotoUrl().toString());
-                                startActivity(new Intent(MainActivity.this,ProfileActivity.class));
+                                startActivity(new Intent(MainActivity.this,RestaurantActivity.class));
                                 finish();
 
 

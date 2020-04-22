@@ -34,14 +34,14 @@ public class RestaurantSectionsPagerAdapter extends FragmentPagerAdapter {
         // Return a RestaurantInfoFragment (defined as a static inner class below).
         //return RestaurantInfoFragment.newInstance(position + 1);
 
-        int i=position%4;
+        int i=position%3;
        if(i==0)
          return  RestaurantInfoFragment.newInstance(position+1);
        else if (i==1)
            return MenuFragment.newInstance("","");
-       else if(i==2)
+       else
             return  CommentsFragment.newInstance(position+1);
-       else return CommentsFragment.newInstance(position+1);
+      // else return CommentsFragment.newInstance(position+1);
     }
 
     @Nullable
@@ -53,6 +53,6 @@ public class RestaurantSectionsPagerAdapter extends FragmentPagerAdapter {
     @Override
     public int getCount() {
         // Show 2 total pages.
-        return 4;
+        return 3;
     }
 }
